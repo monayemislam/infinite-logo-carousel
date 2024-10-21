@@ -1,10 +1,10 @@
 # Infinite Logo Carousel
 
-A framework-agnostic infinite logo carousel using only CSS. This lightweight package allows you to create smooth, infinitely scrolling logo carousels in multiple directions without relying on any JavaScript framework.
+A framework-agnostic infinite logo carousel using CSS and minimal JavaScript. This lightweight package allows you to create smooth, infinitely scrolling logo carousels in multiple directions.
 
 ## Demo
 
-Check out the [live demo](https://monayemislam.github.io/infinite-logo-carousel/demo/) to see the Infinite Logo Carousel in action!
+Check out the [live demo](https://monayemislam.me/packages/infinite-logo-carousel/demo) to see the Infinite Logo Carousel in action!
 
 ## Features
 
@@ -117,4 +117,3 @@ Md Monayem Islam
 ## Support
 
 If you encounter any issues or have questions, please [open an issue](https://github.com/monayemislam/infinite-logo-carousel/issues) on GitHub.
-

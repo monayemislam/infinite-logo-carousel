@@ -1,6 +1,6 @@
 {
   "name": "infinite-logo-carousel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A framework-agnostic infinite logo carousel using only CSS",
   "main": "src/infinite-logo-carousel.js",
   "style": "src/infinite-logo-carousel.css",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/monayemislam/infinite-logo-carousel.git"
   },
-  "homepage": "https://monayemislam.github.io/infinite-logo-carousel/demo/",
+  "homepage": "https://monayemislam.me/packages/infinite-logo-carousel/demo",
   "bugs": {
     "url": "https://github.com/monayemislam/infinite-logo-carousel/issues"
   },
