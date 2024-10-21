@@ -1,7 +1,7 @@
 {
   "name": "infinite-logo-carousel",
   "version": "1.0.1",
-  "description": "A framework-agnostic infinite logo carousel using only CSS",
+  "description": "A framework-agnostic infinite logo carousel using only CSS and minimal JavaScript",
   "main": "src/infinite-logo-carousel.js",
   "style": "src/infinite-logo-carousel.css",
   "scripts": {
