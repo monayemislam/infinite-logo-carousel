@@ -1,13 +1,13 @@
 {
   "name": "infinite-logo-carousel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A framework-agnostic infinite logo carousel using only CSS and minimal JavaScript",
   "main": "src/infinite-logo-carousel.js",
   "style": "src/infinite-logo-carousel.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["carousel", "logo", "css", "infinite", "framework-agnostic"],
+  "keywords": ["carousel", "logo carousel", "infinite logo carousel", "logo slider", "logo slideshow", "showcase logo","brand showcase","css slider","vue carousel","react carousel","angular carousel","javascript carousel","infinite carousel"],
   "author": {
     "name": "Md Monayem Islam",
     "email": "contact@monayemislam.me",
