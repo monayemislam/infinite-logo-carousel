@@ -1,0 +1,115 @@
+@keyframes slide-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes slide-right {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slide-top {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
+}
+
+@keyframes slide-bottom {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: #ffffff;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before, .logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.logos[data-direction^="top-to-bottom"]:before,
+.logos[data-direction^="bottom-to-top"]:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.logos[data-direction^="top-to-bottom"]:after,
+.logos[data-direction^="bottom-to-top"]:after {
+  left: 0;
+  bottom: 0;
+  top: auto;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.logo_items {
+  display: inline-block;
+  animation: 35s infinite linear;
+}
+
+.logos[data-direction="left-to-right"] .logo_items {
+  animation-name: slide-left;
+}
+
+.logos[data-direction="right-to-left"] .logo_items {
+  animation-name: slide-right;
+}
+
+.logos[data-direction="top-to-bottom"] .logo_items {
+  animation-name: slide-top;
+}
+
+.logos[data-direction="bottom-to-top"] .logo_items {
+  animation-name: slide-bottom;
+}
+
+.logos:hover .logo_items {
+  animation-play-state: paused;
+}
+
+.logo_items img {
+  height: 50px;
+  margin: 0 40px;
+  object-fit: contain;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.logos[data-direction^="top-to-bottom"] .logo_items,
+.logos[data-direction^="bottom-to-top"] .logo_items {
+  display: block;
+}
+
+.logos[data-direction^="top-to-bottom"] .logo_items img,
+.logos[data-direction^="bottom-to-top"] .logo_items img {
+  display: block;
+  margin: 30px auto;
+}
+
+/* Add this new rule for vertical carousels */
+.vertical-carousel .logos {
+  height: 300px;
+  padding: 30px 0;
+}

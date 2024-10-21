@@ -1,0 +1,25 @@
+{
+  "name": "infinite-logo-carousel",
+  "version": "1.0.0",
+  "description": "A framework-agnostic infinite logo carousel using only CSS",
+  "main": "src/infinite-logo-carousel.js",
+  "style": "src/infinite-logo-carousel.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["carousel", "logo", "css", "infinite", "framework-agnostic"],
+  "author": {
+    "name": "Md Monayem Islam",
+    "email": "contact@monayemislam.me",
+    "url": "https://monayemislam.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monayemislam/infinite-logo-carousel.git"
+  },
+  "homepage": "https://monayemislam.github.io/infinite-logo-carousel/demo/",
+  "bugs": {
+    "url": "https://github.com/monayemislam/infinite-logo-carousel/issues"
+  },
+  "license": "MIT"
+}

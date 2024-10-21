@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Logo Carousel Demo</title>
+    <link rel="stylesheet" href="../src/infinite-logo-carousel.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h2 {
+            margin-top: 40px;
+            color: #34495e;
+        }
+        .demo-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .logos {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .vertical-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .vertical-carousel {
+            width: 48%;
+        }
+        .vertical-carousel .logos {
+            height: 300px; /* Decreased height */
+        }
+    </style>
+</head>
+<body>
+    <h1>Infinite Logo Carousel Demo</h1>
+
+    <div class="demo-container">
+        <h2>1. Left to Right</h2>
+        <div class="logos" data-direction="left-to-right">
+            <div class="logo_items">
+                <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React">
+                <img src="https://cdn.worldvectorlogo.com/logos/vue-9.svg" alt="Vue.js">
+                <img src="https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" alt="Angular">
+                <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="Node.js">
+                <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python">
+                <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="TypeScript">
+                <img src="https://cdn.worldvectorlogo.com/logos/webpack-icon.svg" alt="Webpack">
+                <img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="Sass">
+                <img src="https://cdn.worldvectorlogo.com/logos/gatsby.svg" alt="Gatsby">
+                <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="Next.js">
+            </div>
+            <div class="logo_items">
+                <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React">
+                <img src="https://cdn.worldvectorlogo.com/logos/vue-9.svg" alt="Vue.js">
+                <img src="https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" alt="Angular">
+                <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="Node.js">
+                <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python">
+                <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="TypeScript">
+                <img src="https://cdn.worldvectorlogo.com/logos/webpack-icon.svg" alt="Webpack">
+                <img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="Sass">
+                <img src="https://cdn.worldvectorlogo.com/logos/gatsby.svg" alt="Gatsby">
+                <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="Next.js">
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-container">
+        <h2>2. Right to Left</h2>
+        <div class="logos" data-direction="right-to-left">
+            <div class="logo_items">
+                <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="Java">
+                <img src="https://cdn.worldvectorlogo.com/logos/golang-1.svg" alt="Go">
+                <img src="https://cdn.worldvectorlogo.com/logos/ruby.svg" alt="Ruby">
+                <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="Laravel">
+                <img src="https://cdn.worldvectorlogo.com/logos/swift-15.svg" alt="Swift">
+                <img src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt="C#">
+                <img src="https://cdn.worldvectorlogo.com/logos/rust.svg" alt="Rust">
+                <img src="https://cdn.worldvectorlogo.com/logos/kotlin-1.svg" alt="Kotlin">
+                <img src="https://cdn.worldvectorlogo.com/logos/scala-4.svg" alt="Scala">
+                <img src="https://cdn.worldvectorlogo.com/logos/dart.svg" alt="Dart">
+            </div>
+            <div class="logo_items">
+                <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="Java">
+                <img src="https://cdn.worldvectorlogo.com/logos/golang-1.svg" alt="Go">
+                <img src="https://cdn.worldvectorlogo.com/logos/ruby.svg" alt="Ruby">
+                <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="Laravel">
+                <img src="https://cdn.worldvectorlogo.com/logos/swift-15.svg" alt="Swift">
+                <img src="https://cdn.worldvectorlogo.com/logos/c--4.svg" alt="C#">
+                <img src="https://cdn.worldvectorlogo.com/logos/rust.svg" alt="Rust">
+                <img src="https://cdn.worldvectorlogo.com/logos/kotlin-1.svg" alt="Kotlin">
+                <img src="https://cdn.worldvectorlogo.com/logos/scala-4.svg" alt="Scala">
+                <img src="https://cdn.worldvectorlogo.com/logos/dart.svg" alt="Dart">
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-container">
+        <h2>3. Vertical Scrolling</h2>
+        <div class="vertical-container">
+            <div class="vertical-carousel">
+                <h3>Top to Bottom</h3>
+                <div class="logos" data-direction="top-to-bottom">
+                    <div class="logo_items">
+                        <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="Docker">
+                        <img src="https://cdn.worldvectorlogo.com/logos/jenkins-1.svg" alt="Jenkins">
+                        <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="AWS">
+                        <img src="https://cdn.worldvectorlogo.com/logos/google-cloud-1.svg" alt="Google Cloud">
+                        <img src="https://cdn.worldvectorlogo.com/logos/azure-1.svg" alt="Azure">
+                        <img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" alt="GitLab">
+                        <img src="https://cdn.worldvectorlogo.com/logos/terraform-enterprise.svg" alt="Terraform">
+                        <img src="https://cdn.worldvectorlogo.com/logos/ansible.svg" alt="Ansible">
+                        <img src="https://cdn.worldvectorlogo.com/logos/prometheus.svg" alt="Prometheus">
+                    </div>
+                    <div class="logo_items">
+                        <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="Docker">
+                        <img src="https://cdn.worldvectorlogo.com/logos/jenkins-1.svg" alt="Jenkins">
+                        <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="AWS">
+                        <img src="https://cdn.worldvectorlogo.com/logos/google-cloud-1.svg" alt="Google Cloud">
+                        <img src="https://cdn.worldvectorlogo.com/logos/azure-1.svg" alt="Azure">
+                        <img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" alt="GitLab">
+                        <img src="https://cdn.worldvectorlogo.com/logos/terraform-enterprise.svg" alt="Terraform">
+                        <img src="https://cdn.worldvectorlogo.com/logos/ansible.svg" alt="Ansible">
+                        <img src="https://cdn.worldvectorlogo.com/logos/prometheus.svg" alt="Prometheus">
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-carousel">
+                <h3>Bottom to Top</h3>
+                <div class="logos" data-direction="bottom-to-top">
+                    <div class="logo_items">
+                        <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB">
+                        <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="PostgreSQL">
+                        <img src="https://cdn.worldvectorlogo.com/logos/mariadb.svg" alt="MariaDB">
+                        <img src="https://cdn.worldvectorlogo.com/logos/redis.svg" alt="Redis">
+                        <img src="https://cdn.worldvectorlogo.com/logos/sqlite.svg" alt="SQLite">
+                        <img src="https://cdn.worldvectorlogo.com/logos/cassandra.svg" alt="Cassandra">
+                        <img src="https://cdn.worldvectorlogo.com/logos/couchbase-1.svg" alt="Couchbase">
+                        <img src="https://cdn.worldvectorlogo.com/logos/elasticsearch.svg" alt="Elasticsearch">
+                        <img src="https://cdn.worldvectorlogo.com/logos/neo4j.svg" alt="Neo4j">
+                    </div>
+                    <div class="logo_items">
+                        <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB">
+                        <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="PostgreSQL">
+                        <img src="https://cdn.worldvectorlogo.com/logos/mariadb.svg" alt="MariaDB">
+                        <img src="https://cdn.worldvectorlogo.com/logos/redis.svg" alt="Redis">
+                        <img src="https://cdn.worldvectorlogo.com/logos/sqlite.svg" alt="SQLite">
+                        <img src="https://cdn.worldvectorlogo.com/logos/cassandra.svg" alt="Cassandra">
+                        <img src="https://cdn.worldvectorlogo.com/logos/couchbase-1.svg" alt="Couchbase">
+                        <img src="https://cdn.worldvectorlogo.com/logos/elasticsearch.svg" alt="Elasticsearch">
+                        <img src="https://cdn.worldvectorlogo.com/logos/neo4j.svg" alt="Neo4j">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../src/infinite-logo-carousel.js"></script>
+</body>
+</html>
